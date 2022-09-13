@@ -1,0 +1,190 @@
+#header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--bg-color);
+}
+
+.header__wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo-img {
+  width: 60px;
+  height: 60px;
+}
+/* nav menu */
+.nav-menu-link {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-left: 16px;
+  padding: 12px 0 6px;
+  position: relative;
+}
+
+.nav-menu-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+  background-color: var(--main-color);
+}
+
+.nav-menu-link:hover {
+  color: var(--main-color);
+}
+
+.nav-menu-link:hover::before {
+  transform: scaleX(1);
+}
+
+/* icon menu  */
+.nav__menu-btn {
+  display: none;
+}
+
+.nav__menu-btn:hover {
+  opacity: 0.8;
+}
+
+/* content */
+#slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 50%;
+  background: url("/img/slider__background/work-plantation-spring-tradition.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+}
+.slider__text-content {
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+}
+
+.slider__heading {
+  padding-bottom: 4px;
+  font-size: 4rem;
+}
+
+.slider__desc {
+  font-size: 2rem;
+}
+/* content */
+.content {
+  width: 100%;
+}
+
+.content__about-product {
+  padding-right: 16px;
+  display: block;
+}
+
+.content__about-product-text {
+  padding-top: 10px;
+  text-align: justify;
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+/*  */
+.content__free-ship {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.content__free-ship-img {
+  width: 200px;
+}
+
+/* products */
+.products__item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.products__name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 6px 0 12px;
+  height: 20px;
+  line-height: 2rem;
+  overflow: hidden;
+}
+
+/* footer */
+.footer {
+  background: var(--bg-color);
+}
+
+.footer__item {
+  color: var(--text-color);
+}
+
+.footer__heading {
+  font-size: 2rem;
+  margin: 12px 0 16px;
+}
+
+.footer__info {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.footer__icon {
+  cursor: pointer;
+  font-size: 1.8rem;
+  width: 20px;
+}
+
+.footer__link {
+  color: var(--text-color);
+}
+
+.footer__item-input {
+  padding: 12px 8px;
+    display: block;
+    width: 100%;
+}
+
+.footer__license {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  border-top: 1px solid #ccc;
+  padding: 12px 0;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* contact zalo */
+.contact__zalo {
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  z-index: 99;
+  border-radius: 50%;
+}
+
+.contact__zalo:hover {
+  transform: scale(1.05);
+}
+
+.contact__zalo-img {
+  height: 54px;
+  line-height: 54px;
+  border-radius: 50%;
+}
