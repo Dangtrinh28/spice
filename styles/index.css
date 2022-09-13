@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   padding-top: 50%;
-  background: url("../img/slider__background/work-plantation-spring-tradition.png");
+  background: url("./img/slider__background/work-plantation-spring-tradition.png");
   background-size: cover;
   background-position: center;
   color: var(--white-color);
